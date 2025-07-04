@@ -2,12 +2,29 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
+  // Safelist important classes to prevent purging
+  safelist: [
+    "animate-spin",
+    "animate-pulse",
+    "animate-bounce",
+    "line-clamp-2",
+    "line-clamp-3",
+    "aspect-video",
+    "bg-gradient-to-r",
+    "bg-gradient-to-br",
+    "from-primary",
+    "to-purple-600",
+    "to-teal-600",
+    "hover:scale-105",
+    "transition-transform",
+    "duration-300",
+  ],
   theme: {
     container: {
       center: true,
@@ -74,4 +91,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

@@ -4,11 +4,132 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+
+    <!-- SEO Meta Tags -->
+    <title>BlogCommunity - Discover Stories that Resonate with You</title>
+    <meta
+      name="description"
+      content="Join BlogCommunity to discover amazing stories, connect with fellow writers, and share your own experiences across technology, travel, fitness, food, and more."
+    />
+    <meta
+      name="keywords"
+      content="blog, community, writing, stories, technology, travel, fitness, food, art, culture"
+    />
+    <meta name="author" content="BlogCommunity" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://blogcommunity.com" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="BlogCommunity - Discover Stories that Resonate with You"
+    />
+    <meta
+      property="og:description"
+      content="Join BlogCommunity to discover amazing stories, connect with fellow writers, and share your own experiences."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://blogcommunity.com" />
+    <meta
+      property="og:image"
+      content="https://blogcommunity.com/og-image.jpg"
+    />
+    <meta property="og:site_name" content="BlogCommunity" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="BlogCommunity - Discover Stories that Resonate with You"
+    />
+    <meta
+      name="twitter:description"
+      content="Join BlogCommunity to discover amazing stories, connect with fellow writers, and share your own experiences."
+    />
+    <meta
+      name="twitter:image"
+      content="https://blogcommunity.com/twitter-image.jpg"
+    />
+
+    <!-- Performance and Preloading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://api.dicebear.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="https://api.tempolabs.ai" />
+
+    <!-- Preload critical resources -->
+    <!-- Removed preload for /src/main.tsx as it is loaded by the script tag below -->
+    <link
+      rel="preload"
+      href="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=1200&q=80"
+      as="image"
+      crossorigin
+    />
+
+    <!-- Resource hints for better performance -->
+    <link rel="prefetch" href="/explore" />
+    <link rel="prefetch" href="/community" />
+    <link rel="prefetch" href="/about" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "BlogCommunity",
+        "url": "https://blogcommunity.com",
+        "description": "A community platform for writers and readers to discover, share, and connect through stories.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "BlogCommunity",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://blogcommunity.com/logo.png"
+          }
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://blogcommunity.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        },
+        "sameAs": [
+          "https://twitter.com/blogcommunity",
+          "https://linkedin.com/company/blogcommunity",
+          "https://facebook.com/blogcommunity"
+        ]
+      }
+    </script>
+
+    <!-- Organization Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "BlogCommunity",
+        "url": "https://blogcommunity.com",
+        "logo": "https://blogcommunity.com/logo.png",
+        "description": "A community platform for writers and readers to discover, share, and connect through stories.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-555-123-4567",
+          "contactType": "customer service",
+          "email": "hello@blogcommunity.com"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Innovation Drive",
+          "addressLocality": "San Francisco",
+          "addressRegion": "CA",
+          "postalCode": "94105",
+          "addressCountry": "US"
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script src="https://api.tempolabs.ai/proxy-asset?url=https://storage.googleapis.com/tempo-public-assets/error-handling.js"></script>
+    <script src="https://api.tempo.new/proxy-asset?url=https://storage.googleapis.com/tempo-public-assets/error-handling.js"></script>
   </body>
 </html>
